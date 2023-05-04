@@ -1,9 +1,16 @@
-export const LandingLayout = () => {
+import { Footer, Navbar } from "@/components";
+import { ReactNode } from "react";
+
+interface LandingLayoutProps {
+  children: ReactNode;
+}
+
+export const LandingLayout = ({ children }: LandingLayoutProps) => {
   return (
     <>
-      <header>header</header>
-      <main>content</main>
-      <footer>footer</footer>
+      <Navbar />
+      <main>{children}</main>
+      <Footer />
     </>
   );
 };

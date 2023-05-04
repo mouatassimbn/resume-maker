@@ -2,8 +2,11 @@ import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@/components";
 import { useRouter } from "next/router";
+import { NextPageWithLayout } from "./_app";
+import { ReactElement } from "react";
+import { LandingLayout } from "@/layouts/landing.layout";
 
-export default function Home() {
+export const Home: NextPageWithLayout = () => {
   const router = useRouter();
 
   return (
@@ -14,12 +17,18 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.homeWrapper}>
-        <h1>Welcome to QuickCV</h1>
+      <main>
+        {/* <h1>Welcome to QuickCV</h1>
         <div className={styles.homeActions}>
           <Button onClick={() => router.push("/initiate")}>Initiate</Button>
-        </div>
+        </div> */}
       </main>
     </>
   );
-}
+};
+
+Home.getLayout = function getLayout(page: ReactElement) {
+  return <LandingLayout>{page}</LandingLayout>;
+};
+
+export default Home;
