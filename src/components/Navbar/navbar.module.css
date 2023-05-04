@@ -6,12 +6,14 @@
   padding: 0 0.5rem;
   box-sizing: border-box;
   height: 60px;
+  text-decoration: none;
 }
 
 .logoWrapper {
   background-color: #0b3954;
   border-radius: 0.5rem;
   padding: 5px;
+  user-select: none;
 }
 
 .logo {
