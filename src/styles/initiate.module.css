@@ -1,0 +1,27 @@
+.initiateWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.initateFunFactTitle {
+  font-size: 3.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.initateFunFact {
+  width: 700px;
+  font-size: 1.5rem;
+}
+
+.initateActions {
+  width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
