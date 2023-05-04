@@ -17,11 +17,16 @@ export const Home: NextPageWithLayout = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        {/* <h1>Welcome to QuickCV</h1>
-        <div className={styles.homeActions}>
-          <Button onClick={() => router.push("/initiate")}>Initiate</Button>
-        </div> */}
+      <main className={styles.homeWrapper}>
+        <section className={styles.welcomeSection}>
+          <h2 className={styles.welcomeSectionTitle}>Impress in Seconds!</h2>
+          <p className={styles.welcomeSectionSubTitle}>
+            Discover your dream job with a resume crafted in minutes.
+          </p>
+          <Button onClick={() => router.push("/initiate")}>
+            let your success story unfold.
+          </Button>
+        </section>
       </main>
     </>
   );

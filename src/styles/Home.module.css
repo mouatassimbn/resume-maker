@@ -1,14 +1,37 @@
 .homeWrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  height: 100%;
   width: 100%;
-  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-.homeActions {
+.welcomeSection {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 110px);
+}
+
+.welcomeSectionTitle {
+  font-size: 4.5rem;
+  margin: 0;
+  padding: 0;
+  color: #0b3954;
+
+  @media screen and (max-width: 755px) {
+    font-size: 2.5rem;
+  }
+}
+
+.welcomeSectionSubTitle {
+  margin: 1rem 0 2rem 0;
+  padding: 0;
+
+  @media screen and (max-width: 755px) {
+    font-size: 0.8rem;
+  }
 }

@@ -9,7 +9,7 @@ export const LandingLayout = ({ children }: LandingLayoutProps) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      {children}
       <Footer />
     </>
   );
