@@ -1,8 +1,12 @@
 import Head from "next/head";
-import Link from "next/link";
 import styles from "@/styles/initiate.module.css";
+import { Button } from "@/components";
+import { useRouter } from "next/router";
+import Next from "@/assets/icons/arrow_right.svg";
 
 export default function Initiate() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -19,9 +23,10 @@ export default function Initiate() {
           crucial few seconds.
         </p>
         <div className={styles.initateActions}>
-          <Link href="/create/personalInfo">
-            take the first step towards your dream job today!
-          </Link>
+          <Next
+            className={styles.initateActionIcon}
+            onClick={() => router.push("/create/personalInfo")}
+          />
         </div>
       </main>
     </>

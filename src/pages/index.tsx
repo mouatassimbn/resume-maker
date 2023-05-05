@@ -1,6 +1,6 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-import { Button } from "@/components";
+import styles from "@/styles/home.module.css";
+import { FancyButton } from "@/components";
 import { useRouter } from "next/router";
 import { NextPageWithLayout } from "./_app";
 import { ReactElement } from "react";
@@ -23,9 +23,9 @@ export const Home: NextPageWithLayout = () => {
           <p className={styles.welcomeSectionSubTitle}>
             Discover your dream job with a resume crafted in minutes.
           </p>
-          <Button onClick={() => router.push("/initiate")}>
+          <FancyButton onClick={() => router.push("/initiate")}>
             let your success story unfold.
-          </Button>
+          </FancyButton>
         </section>
       </main>
     </>
